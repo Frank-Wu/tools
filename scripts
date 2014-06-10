@@ -1,0 +1,10 @@
+list results obtained from grep:
+arr=(`jar tf test.jar|grep mysearchtext`}
+echo ${arr[@]}
+
+extract file from jar:
+jar xf test.jar myfile1 myfile2
+
+add file into jar:
+jar uf test.jar myfile1 myfile2
+
