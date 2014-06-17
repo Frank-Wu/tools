@@ -8,3 +8,5 @@ jar xf test.jar myfile1 myfile2
 add file into jar:
 jar uf test.jar myfile1 myfile2
 
+Read line from file and use it as parameter:
+param=`cat filename`
