@@ -1,6 +1,10 @@
 list results obtained from grep:
-arr=(`jar tf test.jar|grep mysearchtext`}
+arr=(`jar tf test.jar|grep mysearchtext`)
 echo ${arr[@]}
+
+list all files exclude directory:
+arr=`find . -maxdepth 1 -not -type d`
+for i in $arr;do echo $i;done;
 
 extract file from jar:
 jar xf test.jar myfile1 myfile2
